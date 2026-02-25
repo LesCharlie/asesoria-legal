@@ -652,3 +652,42 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* 📱 PARA CELULARES */
+@media (max-width: 768px) {
+
+    /* NAV */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* HERO */
+    .hero h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* BOTÓN */
+    .hero button {
+        width: 80%;
+    }
+
+    /* 📌 ÁREAS DE PRÁCTICA */
+    .contenedor-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
