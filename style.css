@@ -691,3 +691,15 @@ img {
         margin-bottom: 20px;
     }
 }
+
+.social-icons a {
+    color: #facc15;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+}
