@@ -1,26 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // =========================
-    // FAQ (ACORDEÓN)
-    // =========================
-    const questions = document.querySelectorAll(".faq-question");
+// =========================
+// FAQ (ACORDEÓN)
+// =========================
+const questions = document.querySelectorAll(".faq-question");
 
-    questions.forEach(question => {
-        question.addEventListener("click", () => {
+questions.forEach(question => {
+    question.addEventListener("click", () => {
 
-            const answer = question.nextElementSibling;
+        const answer = question.nextElementSibling;
 
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
-                question.querySelector("span").textContent = "+";
-            } else {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-                question.querySelector("span").textContent = "−";
-            }
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+            question.querySelector("span").textContent = "+";
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            question.querySelector("span").textContent = "−";
+        }
 
-        });
     });
-
+});
 
     // =========================
     // TEXTO DINÁMICO
